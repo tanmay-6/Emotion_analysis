@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 st.title("Emotion in the Text")
-text = st.text_area("Write your text",placeholder="Jo bhi text ka analysis krna ho")
+text = st.text_area("Write your text",placeholder="Copy-Paste the text you want to analyse.")
 
 lower_text = text.lower()
 cleaned_text = lower_text.translate(str.maketrans('','',string.punctuation))
